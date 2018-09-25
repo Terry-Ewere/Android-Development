@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bged"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/temp"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="133dp"
+            android:background="#ffff"
+            android:hint="Enter Temperature"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="Temperature Converter"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/cur"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="65dp"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/conv"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="121dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginLeft="43dp"
+            android:text="Convert"
+            android:layout_alignParentLeft="true"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="201dp">
+
+
+            <RadioButton
+                android:id="@+id/c2f"
+                android:layout_width="326dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Celsius To Fahrenheit"
+                android:textColor="#ffff" />
+
+            <RadioButton
+                android:id="@+id/f2c"
+                android:layout_width="327dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:text="Fahrenheit To Celsius"
+                android:textColor="#ffff"
+
+
+                />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/conv"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="43dp"
+            android:onClick="getLocation"
+            android:text="View Location" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Smart Tools</string>
+    <string-array name="name">
+        <item>inch</item>
+        <item>feet</item>
+        <item>yard</item>
+        <item>kilometer</item>
+        <item>mile</item>
+    </string-array>
+
+
+    <string-array name="currency">
+        <item>Dollar</item>
+        <item>Euro</item>
+        <item>Pound</item>
+        <item>Naira</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
+
+
